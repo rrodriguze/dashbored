@@ -16,10 +16,16 @@ export default function RootLayout({
 }>) {
     return (
         <html lang="en">
-            <head />
+            <head>
+                <script
+                    defer
+                    data-domain="socialdashbored.com"
+                    src="https://plausible-analytics-ce-production-37be.up.railway.app/js/script.js"
+                ></script>
+            </head>
             <body
                 className={cn(
-                    "min-h-screen bg-background font-sans antialiased",
+                    "min-h-screen bg-background font-sans antialiased overscroll-none",
                     GeistSans.variable
                 )}
             >
