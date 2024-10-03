@@ -1,9 +1,9 @@
 import { Button } from "@/components/ui/button";
-import ClientSwitcher from "./components/client-switcher";
-import { CalendarDateRangePicker } from "./components/date-range-picker";
-import { MainNav } from "./components/main-nav";
-import Search from "./components/search";
-import UserNav from "./components/user-nav";
+import ClientSwitcher from "./_components/client-switcher";
+import { CalendarDateRangePicker } from "./_components/date-range-picker";
+import { MainNav } from "./_components/main-nav";
+import Search from "./_components/search";
+import UserNav from "./_components/user-nav";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import {
     Card,
@@ -12,8 +12,8 @@ import {
     CardHeader,
     CardTitle,
 } from "@/components/ui/card";
-import Overview from "./components/overview";
-import RecentSales from "./components/recent-sales";
+import Overview from "./_components/overview";
+import RecentSales from "./_components/recent-sales";
 
 export default function HomePage() {
     return (
