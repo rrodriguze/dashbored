@@ -1,7 +1,6 @@
 'use client'
 
 import { Button } from "@/components/ui/button";
-import Image from "next/image";
 import { FormEvent, useState } from "react";
 import {Loader2} from "lucide-react";
 import { Input } from "@/components/ui/input";
