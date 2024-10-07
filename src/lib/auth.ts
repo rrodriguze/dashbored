@@ -13,7 +13,7 @@ export const auth = betterAuth({
     emailAndPassword: {
         enabled: true,
         async sendResetPassword(token, user) {
-            const res = await resend.emails.send({
+            await resend.emails.send({
                 from,
                 to: user.email,
                 subject: "Dashbored - Reset your password",
@@ -25,7 +25,7 @@ export const auth = betterAuth({
         },
         sendEmailVerificationOnSignUp: true,
         async sendVerificationEmail(email, url) {
-            const res = await resend.emails.send({
+            await resend.emails.send({
                 from,
                 to: email,
                 subject: "Dashbored - Verify your email address",

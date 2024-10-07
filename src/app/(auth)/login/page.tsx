@@ -55,7 +55,7 @@ export default function Login() {
             <div className="border-solid border-t h-24 w-full flex flex-col items-center justify-center">
                 <Link href="/signup">
                     <Button variant="link" className="text-blue-500">
-                        Don't have an account? Sign Up
+                        Don&apos;t have an account? Sign Up
                     </Button>
                 </Link>
             </div>

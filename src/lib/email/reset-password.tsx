@@ -39,7 +39,7 @@ export const ResetPasswordEmail = ({
                         </Text>
                         <Text className="text-black text-[14px] leading-[24px]">
                             We recieved a request to reset your password for
-                            your Dashbored account. If you didn't make this
+                            your Dashbored account. If you didn&apos;t make this
                             request, you can safely ignore this email.
                         </Text>
                         <Section className="text-center mt-[32px] mb-[32px]">
@@ -61,7 +61,7 @@ export const ResetPasswordEmail = ({
                         </Text>
                         <Hr className="border border-solid border-[#eaeaea] my-[26px] mx-0 w-full" />
                         <Text className="text-[#666666] text-[12px] leading-[24px]">
-                            If you didn't request a password reset, please
+                            If you didn&apos;t request a password reset, please
                             ignore this email or contact support if you have
                             concerns.
                         </Text>

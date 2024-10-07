@@ -14,7 +14,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { client } from "@/lib/auth-client";
 import { Loader2 } from "lucide-react";
-import { FormEvent, useState } from "react";
+import { useState } from "react";
 import { toast, Toaster } from "sonner";
 
 export default function SignUpPage() {

@@ -82,6 +82,11 @@ export default function Home() {
                 </div>
             </main>
 
+            <Toaster
+				theme="dark"
+				richColors={true}
+			/>
+
             <footer className="w-full max-2-6xl mx-auto py-4 px-4 text-center relative z-20">
                 <p className="text-xs text-gray-500">
                     &copy; {new Date().getFullYear()} Dashbored
