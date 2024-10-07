@@ -19,7 +19,9 @@ export const auth = betterAuth({
                 subject: "Dashbored - Reset your password",
                 react: reactResetPasswordEmail({
                     username: user.email,
-                    resetLink: `${process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.LOCALHOST_URL}/reset-password/${token}`,
+                    resetLink: process.env.VERCEL_PROJECT_PRODUCTION_URL
+                    ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}/reset-password/${token}`
+                    : `${process.env.LOCALHOST_URL}/reset-password/${token}`
                 }),
             });
         },

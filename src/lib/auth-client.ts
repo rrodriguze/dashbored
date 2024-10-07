@@ -1,5 +1,7 @@
-import { createAuthClient } from "better-auth/react"
+import { createAuthClient } from "better-auth/react";
 
 export const client = createAuthClient({
-    baseURL: `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}` || `http://${process.env.LOCALHOST_URL}`
-})
+        baseURL: process.env.VERCEL_PROJECT_PRODUCTION_URL
+        ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
+        : process.env.LOCALHOST_URL
+});
