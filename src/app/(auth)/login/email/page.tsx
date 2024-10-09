@@ -1,9 +1,10 @@
 "use client";
 
+import { Icons } from "@/components/icons";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { client } from "@/lib/auth-client";
-import { Loader2 } from "lucide-react";
+import { ArrowLeft, Loader2 } from "lucide-react";
 import Link from "next/link";
 import { FormEvent, useState } from "react";
 import { toast } from "sonner";
@@ -16,7 +17,7 @@ export default function EmailLoginPage() {
     const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {
         e.preventDefault();
 
-        console.log("handleSubmit")
+        console.log("handleSubmit");
 
         await client.signIn.email(
             {
@@ -85,6 +86,12 @@ export default function EmailLoginPage() {
                                     : "Continue with Email"}
                             </Button>
                         </form>
+                        <Link
+                            className="text-xs text-blue-500 font-medium mt-4 w-full text-center hover:underline"
+                            href="/login"
+                        >
+                            ← Other Login options
+                        </Link>
                     </div>
                 </div>
             </div>
