@@ -17,11 +17,7 @@ export default function RootLayout({
     return (
         <html lang="en">
             <head>
-                <script
-                    defer
-                    data-domain="socialdashbored.com"
-                    src="https://plausible-analytics-ce-production-37be.up.railway.app/js/script.js"
-                ></script>
+                <script defer src="https://data.ruki.es/script.js" data-website-id="1a06a365-54e6-4fb2-a2d4-ec34c478ddc5" />
             </head>
             <body
                 className={cn(
